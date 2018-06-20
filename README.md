@@ -6,6 +6,10 @@
 
 ## To share widely
 
-`https://gitpitch.com/wyncode/gitpitch_sample`
+[https://gitpitch.com/wyncode/gitpitch_sample](https://gitpitch.com/wyncode/gitpitch_sample)
 
-password: wyncodestudent
+Password: wyncodestudent
+
+## To present with speaker notes
+
+[https://gitpitch.com/wyncode/gitpitch_sample?p=instructor&s=Ht7DuvE9P](https://gitpitch.com/wyncode/gitpitch_sample?p=instructor&s=Ht7DuvE9P)
