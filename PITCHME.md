@@ -20,8 +20,10 @@ Note: Anything you put in a header tag automatically becomes the slide's title
 @[3-5](This shows a public method.)
 @[7-11](This shows a private method.)
 
-Note: But you can also set the title manually
+Note: But you can also set the title manually like this `@title[Sample Code Snippet]`
 
 ---?&color=#add9e4&survey=https://docs.google.com/forms/d/e/1FAIpQLSf2wZ75XCsCaqLa2h2ij4pG4jD-lkoqRz4_EXBIcAL1KIgB-w/viewform
 
 @title[Sample Survey]
+
+Note: Surveys can integrate with Google Forms
