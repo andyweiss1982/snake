@@ -5,6 +5,6 @@ background : assets/image/triangles.svg
 background-size : cover
 background-opacity : 80
 highlight : atom-one-dark
-transition : none
+transition : fade
 stealth: Ht7DuvE9P
 footnote : "Sample Footnote Goes Here"
