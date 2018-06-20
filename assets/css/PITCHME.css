@@ -61,7 +61,7 @@
 }
 
 #gp-logo img {
-  max-height: 2em;
+  max-height: 4em;
   max-width: none;
 }
 
@@ -74,4 +74,3 @@
 .gp-contact { font-size : 1.4em; }
 
 .gp-download { margin-left: 10px; }
-
