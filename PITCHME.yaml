@@ -6,5 +6,9 @@ background-size : cover
 background-opacity : 80
 highlight : atom-one-dark
 transition : none
-confidential : wyncodestudent
 footnote : "Sample Footnote Goes Here"
+confidential : wyncodestudent
+pro-title : "Wyncode Academy"
+pro-subtitle : "Never Stop Learning"
+pro-logo : assets/image/logo.png
+pro-background : assets/image/classroom.png
