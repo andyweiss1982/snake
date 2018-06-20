@@ -7,3 +7,5 @@
 ## To share widely
 
 `https://gitpitch.com/wyncode/gitpitch_sample`
+
+password: wyncodestudent
