@@ -12,4 +12,4 @@ Password: wyncodestudent
 
 ## To present with speaker notes
 
-[https://gitpitch.com/wyncode/gitpitch_template?p=instructor&s=Ht7DuvE9P](https://gitpitch.com/wyncode/gitpitch_sample?p=instructor&s=Ht7DuvE9P)
+[https://gitpitch.com/wyncode/gitpitch_template?p=instructor&s=Ht7DuvE9P](https://gitpitch.com/wyncode/gitpitch_template?p=instructor&s=Ht7DuvE9P)
