@@ -1,0 +1,54 @@
+/* UNIVERSAL */
+* {
+  font-family: Arial;
+}
+
+/* ELEMENT NAME */
+h2 {
+  border: 5px solid green;
+}
+
+/* CLASS */
+.tile {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+/* ID */
+#overlay-title {
+  font-size: 72px;
+}
+
+/* ATTRIBUTE */
+[onclick] {
+  color: purple;
+}
+
+/* ATTRIBUTE WITH SPECIFIC VALUE */
+[data-tile-number="3"]{
+  padding: 50px;
+}
+
+/* COMBO */
+.tile[data-tile-number="7"]{
+  border-radius: 100%;
+}
+
+/* NEGATIVE COMBO */
+span:not(#high-score){
+  color: fuchsia;
+}
+
+/* HIERARCHY */
+#overlay-content > button {
+  height: 50px;
+}
+
+/* MEDIA QUERY  */
+@media (max-width: 700px){
+  body {
+    background-color: #BADA55
+  }
+}
