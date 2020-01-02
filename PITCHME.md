@@ -229,4 +229,6 @@ Inspect element, add data-snake-segment attribute
 
 ---
 
+# JavaScript
+
 
