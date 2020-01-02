@@ -1,6 +1,6 @@
 # Make a Snake
 
----?code=code/boilerplate.html&lang=html
+---?code=code/boilerplate.html&lang=html zoom-21
 
 @snap[north span-100]
 #### Boilerplate
