@@ -50,7 +50,7 @@
 @snapend
 
 @[9-18](Different tags produce different elements in the browser.)
-@[9-14](The a -- or anchor -- tag, makes what we commonly refer to as a link.   The img tag makes, not suprisingly, an image.)
+@[9-14](The a -- or "anchor" -- tag, makes what we commonly refer to as a link.)
 @[9-14](The text in between the opening and closing tag is what text displays in the browser.  The href attribute specifies where the browser goes if the link is clicked.  The title attribute displays a tooltip when the user hovers over the link.)
 @[15-18](Img tags are self closing, since there is no text inside.  The src attribute tells us where the image lives on the internet.  The alt attribute is a description of the image for people who use screen readers.)
 
@@ -60,10 +60,10 @@
 #### Divs and Spans
 @snapend
 
-@[9-16](Divs and spans are ways to organize and label your HTML.)
+@[9-16](Divs and spans are ways to organize your HTML.)
 @[9,10](By default, divs stack vertically on the page.  This is called block display.)
 @[12-15](By default, spans stack horizontally.  This is called inline display.)
-@[9-16](We can label elements with ids and classes.  This doesn't do anything just yet, but we could use it later to apply styles or interactivity using CSS and JavaScript.)
+@[9-16](We can label elements with ids and classes.  This doesn't do anything just yet, but we will use it  later to apply styles and interactivity using CSS and JavaScript.)
 @[9,10](Ids are for elements that occur only once inside the HTML document.)
 @[12-15](Whereas classes are for elements that are a member of a group.)
 
@@ -99,7 +99,7 @@
 @snapend
 
 @[26-125](We are making 100 game tiles we will ultimately display in a 10x10 grid.)
-@[26-125](Each one has the same class, "tile", as well as a special attribute called data-tile-number with a unique, numeric value.)  
+@[26-125](Each one has the same class, "tile", as well as a special attribute called data-tile with a unique, numeric value.)  
 @[26-125](Attributes that start with the data prefix are -- not surprisingly -- for storing data about that HTML element that might be used elsewhere.)
 @[26-125](Finally, we are putting some text inside each one just so we can see some output on the screen for now.)
 
@@ -139,10 +139,10 @@ target {
 @[11-17](Targets anything with a class of "tile")
 @[19-22](Targets the element with an id of "overlay-title")
 @[24-27](Targets anything with an onclick attribute)
-@[29-32](Targets anything with a data-tile-number attribute of "3")
-@[34-37](Targets anything with a class of "tile" and a data-tile-number attribute of "7")
+@[29-32](Targets anything with a data-tile attribute of "3")
+@[34-37](Targets anything with a class of "tile" and a data-tile attribute of "7")
 @[39-42](Targets all spans that don't have an id of "high-score")
-@[44-47](Targets any buttons that are direct children of the elements with an id of "overlay-content")
+@[44-47](Targets any buttons that are direct children of the element with an id of "overlay-content")
 @[49-54](Targets the body only when the screen is less that 700px wide)
 
 ---?code=code/position.css&lang=css
@@ -199,7 +199,7 @@ target {
 
 ---
 
-Right click, inspect element, add class="hidden"
+Right click, "inspect", add class="hidden"
 
 ![Hidden](assets/image/hidden.png)
 
@@ -217,7 +217,7 @@ Right click, inspect element, add class="hidden"
 
 ---
 
-Right click, inspect element, add class="food"
+Right click, "inspect", add class="food"
 
 ![Food](assets/image/food.png)
 
@@ -230,5 +230,36 @@ Inspect element, add data-snake-segment attribute
 ---
 
 # JavaScript
+
+---
+
+Right click, "inspect", click "console"
+
+![inspect](assets/image/inspect.png)
+
+---
+
+JavaScript is the only programming language that runs in a web browser.
+
+![console](assets/image/console.png)
+
+---?code=code/data_types.js&lang=js
+
+@snap[north span-100]
+#### JS Data Types
+@snapend
+
+@[1-2](typeof is a function that outputs the type of its input.)
+@[4](We can check if two things are equal with the === operator.)
+@[5](Two values that are similar, but different datatypes, are not strictly equal in JavaScript.)
+@[7-8](true and false are a different datatype alltogether -- "boolean".)
+@[10-13](We can attempt to convert values from one datatype into another -- when it makes sense to do so.  Each of these is a function because it takes input and returns output.)
+@[15-16](Some values are considered "truthy" and others are considered "falsey".)
+@[18](Converting a value from one data type to another can make it pass the strict equality test.)
+
+
+
+
+
 
 

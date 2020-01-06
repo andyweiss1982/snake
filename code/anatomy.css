@@ -27,12 +27,12 @@ h2 {
 }
 
 /* ATTRIBUTE WITH SPECIFIC VALUE */
-[data-tile-number="3"]{
+[data-tile="3"]{
   padding: 50px;
 }
 
 /* COMBO */
-.tile[data-tile-number="7"]{
+.tile[data-tile="7"]{
   border-radius: 100%;
 }
 

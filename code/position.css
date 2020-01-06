@@ -8,7 +8,7 @@ button {
   position: relative;
 }
 
-[data-tile-number="2"]{
+[data-tile="2"]{
   position: absolute;
   top: 0px;
   right: 0px;
