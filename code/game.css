@@ -61,7 +61,7 @@ button {
   border-radius: 100%;
 }
 
-.tile[data-snake-segment] {
+.tile[data-snake] {
   background-color: lightgreen;
 }
 

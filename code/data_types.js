@@ -1,5 +1,10 @@
 typeof("Hello")   // "string"
 typeof(42)        // "number"
+typeof("42")      // "string"
+
+"Hel" + "lo"      // "Hello"
+1 + 1             // 2
+1 + "1"           // "11"
 
 3 === 3           // true
 3 === "3"         // false

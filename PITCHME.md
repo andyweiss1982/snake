@@ -213,7 +213,7 @@ Right click, "inspect", add class="hidden"
 @[47-50](This divides the game board into a 10x10 grid of equally sized squares.)
 @[52-57](If the screen is smaller than 700px x 700px, shrink the game board accordingly.)
 @[59-62](This will make the food tile a red circle.)
-@[64-66](Any tile with a data-snake-segment attribute will display green.  This is how we will draw the snake on the board.)
+@[64-66](Any tile with a data-snake attribute will display green.  This is how we will draw the snake on the board.)
 
 ---
 
@@ -223,7 +223,7 @@ Right click, "inspect", add class="food"
 
 ---
 
-Inspect element, add data-snake-segment attribute
+Inspect element, add data-snake attribute
 
 ![Food](assets/image/snake-3.png)
 
@@ -249,16 +249,66 @@ JavaScript is the only programming language that runs in a web browser.
 #### JS Data Types
 @snapend
 
-@[1-2](typeof is a function that outputs the type of its input.)
-@[4](We can check if two things are equal with the === operator.)
-@[5](Two values that are similar, but different datatypes, are not strictly equal in JavaScript.)
-@[7-8](true and false are a different datatype alltogether -- "boolean".)
-@[10-13](We can attempt to convert values from one datatype into another -- when it makes sense to do so.  Each of these is a function because it takes input and returns output.)
-@[15-16](Some values are considered "truthy" and others are considered "falsey".)
-@[18](Converting a value from one data type to another can make it pass the strict equality test.)
+@[1-3](typeof is a function that outputs the type of its input.)
+@[5-7](Working with like data types does what you probably expect, but weird things can happen when you mix and match.)
+@[9](We can check if two things are equal with the === operator.)
+@[10](Two values that are similar, but different datatypes, are not strictly equal in JavaScript.)
+@[12-13](true and false are a different datatype alltogether -- "boolean".)
+@[15-19](We can attempt to convert values from one datatype into another -- when it makes sense to do so.  Each of these is a function because it takes input and returns output.)
+@[20-21](Some values are considered "truthy" and others are considered "falsey".)
+@[23](Converting a value from one data type to another can make it pass the strict equality test.)
 
+---?code=code/math.js&lang=js
 
+@snap[north span-100]
+#### JS Math
+@snapend
 
+@[1-4](These all do pretty much what you'd expect.)
+@[5](** is for exponents.)
+@[6](% is for remainders.)
+@[8](Returns a random number between 0 and 1.)
+@[10-11](These round numbers the way you'd expect.)
+@[12-13](Or, if you want more granular control.)
+
+---?code=code/variables.js&lang=js
+
+@snap[north span-100]
+#### JS Variables
+@snapend
+
+@[1](The let keyword initializes a variable and lets me assign a value to it.)
+@[2](Variables that are initialized in this way can be reassigned new values.)
+@[3](I can use the console.log function to "read out" the value of a variable.)
+@[4-5](I can assign any value I want.)
+@[7-8](Sometimes, we need to initialize a variable without a value.  In this case, the value defaults to undefined.)
+@[9-10](But I can still assign -- or reassign -- the value later.)
+@[12-13](The const keyword initializes a constant.  They store values like variables, but they cannot be changed or reassigned later.)
+
+---?code=code/control_flow.js&lang=js
+
+@snap[north span-100]
+#### JS Control Flow
+@snapend
+
+@[1](The Math.random() function returns a value between 0 and 1.)
+@[3-7](We can use control flow to do one thing -- or something else -- depending on the value of the random number.)
+@[9](And since we stored it in a constant, we can use it again.)
+@[9](We can use backticks, the dollar sign, and curly braces to interpolate a variable into a string.)
+
+---?code=code/functions.js&lang=js
+
+@snap[north span-100]
+#### JS Functions
+@snapend
+
+@[1-11](Sometimes, we want to store an entire series of steps so we can reuse those steps.)
+@[1-11](We use the function keyword, a name for the function, then parentheses -- if there is any input to the function, it would go here -- and then curly braces to wrap the body of the function.)
+@[13](We call -- or invoke -- the function by saying its name followed by parentheses.)
+@[13-15](This allows us to write the function once and resuse it as many times as we want.)
+@[17](We can even set it on a timer to run every 1000 milliseconds.)
+@[18](And cancel the timer whenever we want.)
+@[2](Notice we are reassigning this const every time the function runs.  Consts and lets initialized inside of functions only exists inside of that function.)
 
 
 
