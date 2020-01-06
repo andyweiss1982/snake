@@ -1,4 +1,4 @@
-const myFam = ['Shelley', 'Naomi', 'Lottie']   // undefined
+const myFam = ['Shelley', 'Naomi', 'Lottie']  // undefined
 
 myFam[0]                                      // 'Shelley'
 myFam[1]                                      // 'Naomi'

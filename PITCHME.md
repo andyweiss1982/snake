@@ -217,7 +217,7 @@ Right click, "inspect", add class="hidden"
 
 ---
 
-Right click, "inspect", add class="food"
+Right click, "inspect", add "food" to class
 
 ![Food](assets/image/food.png)
 
@@ -310,6 +310,72 @@ JavaScript is the only programming language that runs in a web browser.
 @[18](And cancel the timer whenever we want.)
 @[2](Notice we are reassigning this const every time the function runs.  Consts and lets initialized inside of functions only exists inside of that function.)
 
+---?code=code/parameters.js&lang=js
 
+@snap[north span-100]
+#### JS Parameters
+@snapend
+
+@[1-3](Functions can also accept input, known as parameters.)
+@[1](This function accepts a single parameter, which we call the "person".  The name is arbitrary, we could call it anything we like.)
+@[2](Inside the function body, we use the parameter like we would a constant.)
+@[5-6](We can pass different parameters to the greet function to see what happens.)
+@[7](Can you guess what will happen here?)
+
+---?code=code/arrays.js&lang=js
+
+@snap[north span-100]
+#### JS Arrays
+@snapend
+
+@[1](Arrays are lists that contain other data types.  This is an array of strings.)
+@[3-5](We can access items inside the array with bracket notation -- it starts counting from 0.)
+@[7-13](We can iterate over each member of the array by passing it an anonymous function with a single parameter.)
+
+---?code=code/random_family.js&lang=js
+
+@snap[north span-100]
+#### Random Item inside Array
+@snapend
+
+@[1-3](We can use the length property to tell us how many items are in an array.)
+@[5-9](This function will greet a random family member each time it's called.  Let's see how it works.)
+@[6](A random number from 0 to 1, multiplied by 3, rounded down.)
+@[7-8](We access the array at the given position -- and greet them.)
+@[11](We can set it up to greet a random person once a second.)
+@[12](And then we can turn the timer off.)
+
+---?code=code/objects.js&lang=js
+
+@snap[north span-100]
+#### JS Objects
+@snapend
+
+@[1-5](Like arrays, objects hold other data types.)
+@[1-5](The words on the left are called keys, the ones on the right are called values.)
+@[7-8](We can access data inside of an object using dot notation.)
+@[10-11](And also update data inside of an object.)
+@[13-14](We can add new keys to existing objects.)
+@[16-17](As well as remove keys altogether.)
+
+---?code=code/dom_query.js&lang=js
+
+@snap[north span-100]
+#### DOM Manipulation
+@snapend
+
+@[1](JavaScript can read through the webpage, find the element with an id of "overlay", and store it in a constant.)
+@[3](We can console log the overlay to make sure the first line worked as expected.)
+@[5](Now we can programatically add class="hidden" to the overlay.)
+
+---?code=code/start_game.js&lang=js
+
+@snap[north span-100]
+#### Start Game Function
+@snapend
+
+@[1-3](Remember the onclick attribute of the button?  Now's its time to shine.)
+
+---
 
 

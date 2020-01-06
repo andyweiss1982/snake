@@ -9,3 +9,9 @@ console.log(me.age)
 
 me.favoriteColor = 'magenta'
 console.log(me)
+
+me.favoriteAnimal = 'puppy'
+console.log(me)
+
+delete me.favoriteColor
+console.log(me)
