@@ -68,17 +68,17 @@ function gameOver(){
 function startGame(){
   snakeLength = 1
   overlay.classList.add('hidden')
-  // const allTiles = document.querySelectorAll('.tile')
-  // allTiles.forEach(function(tile){
-  //   tile.classList.remove('food')
-  //   delete tile.dataset.snake
-  // })
-  // const foodTile = allTiles[Math.floor(Math.random() * allTiles.length)]
-  // foodTile.classList.add('food')
-  // const notFood = document.querySelectorAll('.tile:not(.food)')
-  // const headTile = notFood[Math.floor(Math.random() * notFood.length)]
-  // headTile.dataset.snake = snakeLength
-  // snakeSlither = setInterval(move, 400)
+  const allTiles = document.querySelectorAll('.tile')
+  allTiles.forEach(function(tile){
+    tile.classList.remove('food')
+    delete tile.dataset.snake
+  })
+  const foodTile = allTiles[Math.floor(Math.random() * allTiles.length)]
+  foodTile.classList.add('food')
+  const notFood = document.querySelectorAll('.tile:not(.food)')
+  const headTile = notFood[Math.floor(Math.random() * notFood.length)]
+  headTile.dataset.snake = snakeLength
+  snakeSlither = setInterval(move, 400)
 }
 
 document.addEventListener('keyup', function(event){

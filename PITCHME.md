@@ -1,5 +1,7 @@
 # Make a Snake 🐍
 
+[Final Result](https://wyncode.github.io/wyntro2020)
+
 ---
 
 ## Hyper
@@ -111,6 +113,15 @@
 
 @[7](This link tag pulls in styles we will write in a file called styles.css.  It goes in the head of our HTML document.)
 @[128](This script tag pulls in the JavaScript we will write in a file called game.js.  It goes at the very bottom of the body tag.)
+
+---
+
+## Hyper
+## Text
+## Markup
+## Language
+
+[Get the Code](https://raw.githubusercontent.com/wyncode/wyntro2020/master/index.html)
 
 ---
 
@@ -226,6 +237,14 @@ Right click, "inspect", add "food" to class
 Inspect element, add data-snake attribute
 
 ![Food](assets/image/snake-3.png)
+
+---
+
+## Cascading
+## Style
+## Sheets
+
+[Get the Code](https://raw.githubusercontent.com/wyncode/wyntro2020/master/style.css)
 
 ---
 
@@ -575,4 +594,12 @@ It works until it doesn't...
 
 ---
 
+## JavaScript
+
+[Get the Code](https://raw.githubusercontent.com/wyncode/wyntro2020/master/game.js)
+
+---
+
 # Make a Snake 🐍
+
+[Final Result](https://wyncode.github.io/wyntro2020)

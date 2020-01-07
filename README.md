@@ -8,9 +8,8 @@
 
 [https://gitpitch.com/wyncode/wyntro2020](https://gitpitch.com/wyncode/wyntro2020)
 
-Password: `wyntroduction`
+Password: `wyntro2020`
 
 ## Final Game Deploy:
 
-
-
+[https://wyncode.github.io/wyntro2020](https://wyncode.github.io/wyntro2020)
