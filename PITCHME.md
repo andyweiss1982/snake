@@ -114,7 +114,7 @@
 @[7](This link tag pulls in styles we will write in a file called styles.css.  It goes in the head of our HTML document.)
 @[128](This script tag pulls in the JavaScript we will write in a file called game.js.  It goes at the very bottom of the body tag.)
 
----code?index.html&lang=html
+---?code=index.html&lang=html
 
 @snap[north span-100]
 ### Get the HTML
@@ -235,7 +235,7 @@ Inspect element, add data-snake attribute
 
 ![Food](assets/image/snake-3.png)
 
----code?style.css&lang=css
+---?code=style.css&lang=css
 
 @snap[north span-100]
 ### Get the CSS
@@ -587,7 +587,7 @@ It works until it doesn't...
 
 [localStorage documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
----code?game.js&lang=js
+---?code=game.js&lang=js
 
 @snap[north span-100]
 ### Get the JS
