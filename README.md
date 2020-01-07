@@ -1,15 +1,16 @@
-# Gitpitch Sample Project
+# Wyntro 2020
 
 ## To run locally
 
-`docker run -it -v $(pwd):/repo -p 9000:9000 store/gitpitch/desktop:pro`
+`docker run -it -v $(pwd):/repo -p 9000:9000 gitpitch/desktop:pro`
 
 ## To share widely
 
-[https://gitpitch.com/wyncode/gitpitch_template](https://gitpitch.com/wyncode/gitpitch_template)
+[https://gitpitch.com/wyncode/wyntro2020](https://gitpitch.com/wyncode/wyntro2020)
 
-Password: wyncodestudent
+Password: `wyntroduction`
 
-## To present with speaker notes
+## Final Game Deploy:
 
-[https://gitpitch.com/wyncode/gitpitch_template?p=instructor&s=Ht7DuvE9P](https://gitpitch.com/wyncode/gitpitch_template?p=instructor&s=Ht7DuvE9P)
+
+

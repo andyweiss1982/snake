@@ -1,4 +1,4 @@
-# Make a Snake
+# Make a Snake 🐍
 
 ---
 
@@ -99,7 +99,7 @@
 @snapend
 
 @[26-125](We are making 100 game tiles we will ultimately display in a 10x10 grid.)
-@[26-125](Each one has the same class, "tile", as well as a special attribute called data-tile with a unique, numeric value.)  
+@[26-125](Each one has the same class, "tile", as well as a special attribute called data-position with a unique, numeric value.)  
 @[26-125](Attributes that start with the data prefix are -- not surprisingly -- for storing data about that HTML element that might be used elsewhere.)
 @[26-125](Finally, we are putting some text inside each one just so we can see some output on the screen for now.)
 
@@ -139,8 +139,8 @@ target {
 @[11-17](Targets anything with a class of "tile")
 @[19-22](Targets the element with an id of "overlay-title")
 @[24-27](Targets anything with an onclick attribute)
-@[29-32](Targets anything with a data-tile attribute of "3")
-@[34-37](Targets anything with a class of "tile" and a data-tile attribute of "7")
+@[29-32](Targets anything with a data-position attribute of "3")
+@[34-37](Targets anything with a class of "tile" and a data-position attribute of "7")
 @[39-42](Targets all spans that don't have an id of "high-score")
 @[44-47](Targets any buttons that are direct children of the element with an id of "overlay-content")
 @[49-54](Targets the body only when the screen is less that 700px wide)
@@ -503,7 +503,76 @@ It works until it doesn't...
 * ~~Make the snake's head move in response to user interaction~~
 * Make the snake grow when the head reaches the food
 
+---?code=code/grow.js&lang=js
 
+@snap[north span-100]
+#### Snake Grow
+@snapend
 
+@[25-26](Let's first find the foodTile and the number of its position.)
+@[27,33](If the headPosition is on top of the food, we want to: 1. Move the foodTile somewhere else,  2. Increase the length of the snake)
+@[28-31](Move the foodTile somewhere else -- that's not currently part of the snake.)
+@[32](Increase the length of the snake.  Now that the snake is potentially longer than 1 tile long, we have to consider what to do with each tile individually.)
+@[34](First, let's find all the tiles with a data-snake attribute.  Right now there's only one, but as the snake grows there will be more.)
+@[35-36,42](We need to iterate through each snake segment and add one to it's data-sname attribute.  So data-snake="1" becomes data-snake="2", etc...)
+@[37-41](But we only want to assign the higher value if the snale is allowed to be that long.  If not, we need to remove the data-snake attribute altogether or else the snake will grow indefinitely.)
 
+---
 
+### Medium Term Goals:
+
+* ~~Make the snake's head move in response to user interaction~~
+* ~~Make the snake grow when the head reaches the food~~
+
+---
+
+### Long Term Goals
+* End the game when the snake runs into itself
+* Make it possible to play again
+
+---?code=code/game_over.js&lang=js
+
+@snap[north span-100]
+#### Game Over
+@snapend
+
+@[43-48](We actually only want to move the snake forward if there's no snake segment already there.  If the snake ran into itself we need to end the game.)
+@[51-53](We need to stop the snake from slithering every 400 milliseconds, and we want to reintroduce the overlay onto the screen.)
+@[54-65](Then, depending on whether or not the snake is longer than the existing high score, we want to change the information on the overlay.)
+
+---
+
+### Long Term Goals
+* ~~End the game when the snake runs into itself~~
+* Make it possible to play again
+
+## 🤔
+
+---?code=code/play_again.js&lang=js
+
+@snap[north span-100]
+#### Play Again
+@snapend
+
+@[69](Reset the snakeLength to 1.)
+@[72-75](Unset all of the food and snake tiles).
+
+---
+
+### Long Term Goals
+* ~~End the game when the snake runs into itself~~
+* ~~Make it possible to play again~~
+
+## 😃
+
+---
+
+### Bonus Goals?
+
+* Save the high score when reloading the page:
+
+[localStorage documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+
+---
+
+# Make a Snake 🐍

@@ -8,16 +8,16 @@ const headTile = notFood[Math.floor(Math.random() * notFood.length)]
 // undefined
 
 console.log(headTile)
-// <div class="tile" data-tile="32">Tile 32</div>
+// <div class="tile" data-position="32">Tile 32</div>
 
 console.log(headTile.dataset)
-// DOMStringMap {tile: "32"}
+// DOMStringMap {position: "32"}
 
 headTile.dataset.snake = 1
 // 1
 
 console.log(headTile.dataset)
-// DOMStringMap {tile: "32", snake: "1"}
+// DOMStringMap {position: "32", snake: "1"}
 
 
 

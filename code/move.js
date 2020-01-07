@@ -5,7 +5,7 @@ let snakeSlither = undefined
 
 function move(){
   let headTile = document.querySelector('[data-snake="1"]')
-  let headPosition = Number(headTile.dataset.tile)
+  let headPosition = Number(headTile.dataset.position)
   if (direction === 'up'){
     headPosition -= 10
   }
@@ -19,7 +19,7 @@ function move(){
     headPosition += 1
   }
   delete headTile.dataset.snake
-  headTile = document.querySelector(`[data-tile="${headPosition}"]`)
+  headTile = document.querySelector(`[data-position="${headPosition}"]`)
   headTile.dataset.snake = 1
 }
 

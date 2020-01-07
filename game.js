@@ -41,21 +41,44 @@ function move(){
     }
   })
   headTile = document.querySelector(`[data-position="${headPosition}"]`)
-  headTile.dataset.snake = 1
+  if (headTile.dataset.snake === undefined) {
+    headTile.dataset.snake = 1
+  } else {
+    gameOver()
+  }
+}
+
+function gameOver(){
+  clearInterval(snakeSlither)
+  overlay.classList.remove('hidden')
+  const overlayTitle = document.querySelector('#overlay-title')
+  const highScore = document.querySelector('#high-score')
+  const yourScore = document.querySelector('#your-score')
+  const startButton = document.querySelector('#start-button')
+  if (snakeLength > Number(highScore.textContent)) {
+    overlayTitle.textContent = '🙌 High Score!'
+    highScore.textContent = snakeLength
+  } else {
+    overlayTitle.textContent = '😭 Game Over!'
+  }
+  yourScore.textContent = snakeLength
+  startButton.textContent = 'Play Again'
 }
 
 function startGame(){
+  snakeLength = 1
   overlay.classList.add('hidden')
-
-  const allTiles = document.querySelectorAll('.tile')
-  const foodTile = allTiles[Math.floor(Math.random() * allTiles.length)]
-  foodTile.classList.add('food')
-
-  const notFood = document.querySelectorAll('.tile:not(.food)')
-  const headTile = notFood[Math.floor(Math.random() * notFood.length)]
-  headTile.dataset.snake = snakeLength
-
-  snakeSlither = setInterval(move, 400)
+  // const allTiles = document.querySelectorAll('.tile')
+  // allTiles.forEach(function(tile){
+  //   tile.classList.remove('food')
+  //   delete tile.dataset.snake
+  // })
+  // const foodTile = allTiles[Math.floor(Math.random() * allTiles.length)]
+  // foodTile.classList.add('food')
+  // const notFood = document.querySelectorAll('.tile:not(.food)')
+  // const headTile = notFood[Math.floor(Math.random() * notFood.length)]
+  // headTile.dataset.snake = snakeLength
+  // snakeSlither = setInterval(move, 400)
 }
 
 document.addEventListener('keyup', function(event){
