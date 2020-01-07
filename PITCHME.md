@@ -1,7 +1,7 @@
 # Make a Snake 🐍
 
-[Get Started With repl.it](repl.it/@andyweiss1982/wyntro2020)
-[Final Result](https://wyncode.github.io/wyntro2020)
+* [Get Started With repl.it](repl.it/@andyweiss1982/wyntro2020)
+* [Final Result](https://wyncode.github.io/wyntro2020)
 
 ---
 
