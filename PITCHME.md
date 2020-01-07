@@ -358,6 +358,17 @@ JavaScript is the only programming language that runs in a web browser.
 @[13-14](We can add new keys to existing objects.)
 @[16-17](As well as remove keys altogether.)
 
+---?code=code/document.js&lang=js
+
+@snap[north span-100]
+#### Document Object Model
+@snapend
+
+@[1-2](If you just type "document" in the console, you get a JavaScript representation of the entire HTML document, known as the DOM.)
+@[4-5](We can query the DOM to find a single element that matches certain criteria -- in this case, the element with an id of "overlay".)
+@[7-8](Or we can query the DOM to find an array of elements that match our criteria -- in this case, any element with a class of "tile".)
+@[10-13](Finally, we can listen for events the user does in the document.  This logs to the console each key the user types on the document.)
+
 ---?code=code/dom_query.js&lang=js
 
 @snap[north span-100]
@@ -374,8 +385,125 @@ JavaScript is the only programming language that runs in a web browser.
 #### Start Game Function
 @snapend
 
-@[1-3](Remember the onclick attribute of the button?  Now's its time to shine.)
+@[1-5](Remember the onclick attribute of the button?  Now's its time to shine.)
+@[1](This constant declaration is made outside the function because we will want to use it in more than one place.)
 
 ---
+
+### Short Term Goals:
+
+* Place the food on a random tile on the board
+* Place the snake's head on a random tile of the board
+
+---
+
+### Medium Term Goals:
+
+* Make the snake's head move in response to user interaction
+* Make the snake grow when the head reaches the food
+
+---
+
+### Long Term Goals
+* End the game when the snake runs into itself
+* Make it possible to play again
+
+---?code=code/random_food.js&lang=js
+
+@snap[north span-100]
+#### Random Food
+@snapend
+
+@[1-5](querySelectorAll('.tile') returns an array of all the elements with a class of "tile".)
+@[7-11](This stores a random tile in the constant foodTile.)
+@[13-14](This adds the class of food to that random tile.)
+
+---?code=code/random_head.js&lang=js
+
+@snap[north span-100]
+#### Random Snake Head
+@snapend
+
+@[1-5](This forms an array of the 99 tiles that are not the food tile.)
+@[7-8](This selects a random eligible tile and designates it as the snake's head.)
+@[10-14](Every HTML element has a dataset. It's an object of all the data-attributes on the the element.)
+@[16-20](We can manipulate this object to display the snake on the screen.  Notice all the data is converted into strings.)
+
+---?code=code/short_term.js&lang=js
+
+@snap[north span-100]
+#### ~~Short Term Goals~~
+@snapend
+
+@[2](Use let to initialize the snakeLength because we know it will change over time.)
+@[7-9](Make a random tile the food tile.)
+@[11-13](Make a random not-food tile the head tile.)
+
+---
+
+### Short Term Goals:
+
+* ~~Place the food on a random tile on the board~~
+* ~~Place the snake's head on a random tile of the board~~
+
+---
+
+### Medium Term Goals:
+
+* Make the snake's head move in response to user interaction
+* Make the snake grow when the head reaches the food
+
+---?code=code/slither.js&lang=js
+
+@snap[north span-100]
+#### Snake Slither 1
+@snapend
+
+@[3](The intial direction will random -- either up, down, left or right.)
+@[4](The snakeSlither variable starts off undefined, we will assign it inside of the startGame function.)
+@[6-8](For now our move function doesn't actually move anything.  It just logs to the console which direction the snake wants to move in.)
+@[21](At the bottom of the startGame function, we set a timer so that the snake tries to "move" once every 400 milliseconds.)
+@[24-29](Finally, we can listen for when the user presses one of the arrow keys and change the direction accordingly.)
+
+---?code=code/move.js&lang=js
+
+@snap[north span-100]
+#### Snake Slither 2
+@snapend
+
+@[6-8](Let's find current head and the number of its position.)
+@[9-20](Depending on the direction, let's figure out what the new position should be.)
+@[21-23](Let's remove the data-snake attribute from the old head, find the new head, and assign it a data-snake attribute of "1".)
+
+---
+
+```
+Uncaught TypeError: Cannot read property 'dataset' of null
+```
+
+## 🤔
+
+It works until it doesn't...
+
+---?code=code/sides.js&lang=js
+
+@snap[north span-100]
+#### Snake Slither 3
+@snapend
+
+@[11](-5 + 100 = 95.  If we are in the top row and go up, come out the bottom.)
+@[15](105 - 100 = 5.  If we are in the bottom row and go down, come out the top.)
+@[19](40 + 10 = 50.  If we are on the left side and go left, come out the right.)
+@[23](41 - 10 = 31.  If we are on the right side and go right, come out the left.)
+
+---
+
+### Medium Term Goals:
+
+* ~~Make the snake's head move in response to user interaction~~
+* Make the snake grow when the head reaches the food
+
+
+
 
 
