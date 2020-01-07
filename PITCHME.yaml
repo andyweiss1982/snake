@@ -1,14 +1,14 @@
-theme: sky
-theme-override: assets/css/PITCHME.css
-logo: assets/image/logo.png
-background: assets/image/triangles.svg
-background-size: cover
-background-opacity: 80
-highlight: atom-one-dark
-transition: fade
-footnote: "Never Stop Learning"
-confidential: wyntro2020
-pro-title: ""
-pro-subtitle: ""
-pro-logo: assets/image/logo.png
-pro-background: assets/image/classroom.png
+theme : sky
+theme-override : assets/css/PITCHME.css
+logo : assets/image/logo.png
+background : assets/image/triangles.svg
+background-size : cover
+background-opacity : 80
+highlight : atom-one-dark
+transition : fade
+footnote : "Never Stop Learning"
+confidential : wyncodestudent
+pro-title : ""
+pro-subtitle : ""
+pro-logo : assets/image/logo.png
+pro-background : assets/image/classroom.png
