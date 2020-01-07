@@ -114,14 +114,11 @@
 @[7](This link tag pulls in styles we will write in a file called styles.css.  It goes in the head of our HTML document.)
 @[128](This script tag pulls in the JavaScript we will write in a file called game.js.  It goes at the very bottom of the body tag.)
 
----
+---code?index.html&lang=html
 
-## Hyper
-## Text
-## Markup
-## Language
-
-[Get the Code](https://raw.githubusercontent.com/wyncode/wyntro2020/master/index.html)
+@snap[north span-100]
+### Get the HTML
+@snapend
 
 ---
 
@@ -238,13 +235,11 @@ Inspect element, add data-snake attribute
 
 ![Food](assets/image/snake-3.png)
 
----
+---code?style.css&lang=css
 
-## Cascading
-## Style
-## Sheets
-
-[Get the Code](https://raw.githubusercontent.com/wyncode/wyntro2020/master/style.css)
+@snap[north span-100]
+### Get the CSS
+@snapend
 
 ---
 
@@ -592,11 +587,11 @@ It works until it doesn't...
 
 [localStorage documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
----
+---code?game.js&lang=js
 
-## JavaScript
-
-[Get the Code](https://raw.githubusercontent.com/wyncode/wyntro2020/master/game.js)
+@snap[north span-100]
+### Get the JS
+@snapend
 
 ---
 
