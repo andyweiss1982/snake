@@ -390,9 +390,11 @@ JavaScript is the only programming language that runs in a web browser.
 #### DOM Manipulation
 @snapend
 
-@[1](JavaScript can read through the webpage, find the element with an id of "overlay", and store it in a constant.)
-@[3](We can console log the overlay to make sure the first line worked as expected.)
-@[5](Now we can programatically add class="hidden" to the overlay.)
+@[1](JavaScript can read through the webpack, find the element with an id of "your-score", and store it in a constant.)
+@[3](We can log it to the console to make sure the first line worked as expected.)
+@[5](Now we can programatically manipulate its textContent to give ourselves whatever score we want!)
+@[7-9](Now we can find the overlay and store it in a constant.)
+@[11](And we can programatically add class="hidden" to the overlay.)
 
 ---?code=code/start_game.js&lang=js
 
