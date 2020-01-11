@@ -586,7 +586,8 @@ It works until it doesn't...
 
 ### Bonus Goals?
 
-* Save the high score when reloading the page:
+* Make the snake go faster when it eats the food.
+* Save the high score when reloading the page.
 
 [localStorage documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
