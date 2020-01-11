@@ -78,7 +78,7 @@ Justin Bieber!
 ---?code=code/boilerplate.html&lang=html
 
 @snap[north span-100]
-#### Boilerplate
+#### [Boilerplate](https://repl.it/@andyweiss1982/wyntro2020)
 @snapend
 
 @[1](This just tells the browser that this is an HTML document.)
