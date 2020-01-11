@@ -11,6 +11,61 @@
 ## Language
 
 ---
+@snap[north span-100]
+#### HTML
+@snapend
+
+Aliens invade earth
+
+take cover
+
+Justin Bieber!
+
+---
+
+@snap[north span-100]
+#### HTML
+@snapend
+
+@snap[west span-50]
+![Aliens](assets/image/aliens.png)
+@snapend
+
+@snap[east span-40]
+![Bieber](assets/image/bieber.png)
+@snapend
+
+---
+
+@snap[north span-100]
+#### HTML
+@snapend
+
+@snap[midpoint span-60]
+![Markup](assets/image/markup.png)
+@snapend
+
+---
+
+@snap[north span-100]
+#### HTML
+@snapend
+
+@snap[midpoint span-50]
+![Markup](assets/image/html1.png)
+@snapend
+
+---
+
+@snap[north span-100]
+#### HTML
+@snapend
+
+@snap[midpoint span-50]
+![Markup](assets/image/html2.png)
+@snapend
+
+---
 
 #### Anatomy of an HTML element
 
