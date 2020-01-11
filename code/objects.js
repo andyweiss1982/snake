@@ -15,3 +15,4 @@ console.log(me)
 
 delete me.favoriteColor
 console.log(me)
+console.log(me.favoriteColor)

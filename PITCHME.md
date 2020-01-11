@@ -427,6 +427,7 @@ JavaScript is the only programming language that runs in a web browser.
 @[10-11](And also update data inside of an object.)
 @[13-14](We can add new keys to existing objects.)
 @[16-17](As well as remove keys altogether.)
+@[18](If you ask an object for a key it doesn't have, you get undefined.)
 
 ---?code=code/document.js&lang=js
 
